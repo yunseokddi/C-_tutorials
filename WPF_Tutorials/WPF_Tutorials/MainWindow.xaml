@@ -6,10 +6,33 @@
         xmlns:local="clr-namespace:WPF_Tutorials"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
+    <!--<StackPanel>
         <Button Name="btn_owner" Click="btn_owner_Click" FontSize="40">Center Owner</Button>
-        <Button Name="btn_screen" Click="btn_screen_Click" FontSize="40">Center Screen</Button>
-        <Button Name="btn_manual" Click="btn_manual_Click" FontSize="40">Center Manual</Button>
+        <Button Name="btn_screen"  Click="btn_screen_Click" FontSize="40">Center Screen</Button>
+        <Button Name="btn_manual" Click="btn_manual_Click" FontSize="40">Manual</Button>
         <Button Name="btn_top" Click="btn_top_Click" FontSize="40">Top Most</Button>
-    </StackPanel>
+        
+    </StackPanel>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="80"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="tb_name" Text="이름" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tb_age" Text="나이" Grid.Row="1" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tb_intro" Text="소개" Grid.Row="2" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbox_name" Grid.Column="1" Grid.ColumnSpan="2" Margin="2,2,2,2" Background="Cyan"/>
+        <TextBox x:Name="tbox_age" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="2,2,2,2" Background="Cyan"/>
+        <TextBox x:Name="tbox_intro" Grid.Row="2" Grid.Column="1" Margin="2" AcceptsReturn="True" Background="Cyan"/>
+        <Button x:Name="btn_ok" Grid.Row="2" Grid.Column="2" Content="등록"/>
+        <TextBlock x:Name="tb_about" Text="Grid를 이용하여 배치하기" Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
+    </Grid>
 </Window>

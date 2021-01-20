@@ -10,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Tutorials
+namespace WpfApp
 {
     /// <summary>
-    /// ChildWindow.xaml에 대한 상호 작용 논리
+    /// Contact.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class ChildWindow : Window
+    public partial class Contact : Page
     {
-        public ChildWindow()
+        public Contact()
         {
             InitializeComponent();
         }
-
     }
 }

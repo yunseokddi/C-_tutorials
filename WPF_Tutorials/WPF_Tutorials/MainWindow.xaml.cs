@@ -25,35 +25,35 @@ namespace WPF_Tutorials
             InitializeComponent();
         }
 
-        private void btn_owner_Click(object sender, RoutedEventArgs e)
-        {
-            Window win = new ChildWindow();
-            win.Owner = this;
-            win.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-            win.Show();
-        }
+        //private void btn_owner_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Window win = new ChildWindow();
+        //    win.Owner = this;
+        //    win.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+        //    win.Show();
+        //}
 
-        private void btn_screen_Click(object sender, RoutedEventArgs e)
-        {
-            Window win = new ChildWindow();
-            win.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            win.Show();
-        }
+        //private void btn_screen_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Window win = new ChildWindow();
+        //    win.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+        //    win.Show();
+        //}
 
-        private void btn_manual_Click(object sender, RoutedEventArgs e)
-        {
-            Window win = new ChildWindow();
-            win.WindowStartupLocation = WindowStartupLocation.Manual;
-            win.Show();
-        }
+        //private void btn_manual_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Window win = new ChildWindow();
+        //    win.WindowStartupLocation = WindowStartupLocation.Manual;
+        //    win.Show();
+        //}
 
-        private void btn_top_Click(object sender, RoutedEventArgs e)
-        {
-            Window win = new ChildWindow();
-            win.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            win.Topmost = true;
-            win.Background = Brushes.Cyan;
-            win.Show();
-        }
+        //private void btn_top_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Window win = new ChildWindow();
+        //    win.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+        //    win.Topmost = true;
+        //    win.Background = Brushes.Cyan;
+        //    win.Show();
+        //}
     }
 }
